@@ -1,8 +1,12 @@
 <template>
     <div id="header">
-        <div class="logo"><img src="../../assets/booklogo.png" alt=""></div>
-        <div class="title">二手图书</div>
-        <div class="user"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+        <router-link to="/" class="logo">
+            <img src="../assets/booklogo.png" alt="">
+        </router-link>
+        <span class="title">unicore二手图书</span>
+        <router-link to="/user" tag="div" class="user">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+        </router-link>
     </div>
 </template>
 <script>
@@ -12,36 +16,37 @@ export default {
         return{
 
         }
-    },
-    methods(){
-
-    }
+    } 
 }
 </script>
 <style lang="less" scoped>
-
-@import "../../style/main.less";
+@import "../style/main.less";
 #header{
     width:100%;
     .h(44);
     .lh(44);
     color:#fff;
     .fs(16);
-    background:rgb(248, 248, 50);
+    position: fixed;
+    .top(0);
+    .left(0);
+    .right(0);
+    z-index:997;
+    background:#C20 ;
     display: flex;
     justify-content: space-around;
     flex-flow:row nowrap;
     .logo{
-        width:25%;
+        width:20%;
         height:100%;
         .h(44);
         .lh(44);
         text-align:center;
         img{
             display: block;
-            .w(25);
-            .h(25);
-
+            .w(26);
+            .h(26);
+            .mg(9,0,9,15);
         }
     }
     .title{
@@ -53,13 +58,15 @@ export default {
     .user{
         .h(44);
         .lh(44);
-        width:25%;
+        width:30%;
         height:100%;
         text-align:right;
         padding-right:.2rem;
         box-sizing:border-box;
+        i{
+            .fs(18);
+        }
     }
-
 }
 </style>
 

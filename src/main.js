@@ -12,8 +12,8 @@ import 'mint-ui/lib/style.css';
 
 import "./font-awesome-4.7.0/css/font-awesome.min.css";
 
-Vue.component(Swipe.name, Swipe);
-Vue.component(SwipeItem.name, SwipeItem);
+// Vue.component(Swipe.name, Swipe);
+// Vue.component(SwipeItem.name, SwipeItem);
 Vue.use(MintUI);
 
 Vue.prototype.$axios=Axios;

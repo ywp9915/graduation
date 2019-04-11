@@ -6,6 +6,9 @@
 
 <style lang="less" scoped>
 @import "./style/main.less";
+#app{
+  .fs(14);
+}
 // #app {
 //   font-family: "Avenir", Helvetica, Arial, sans-serif;
 //   -webkit-font-smoothing: antialiased;
