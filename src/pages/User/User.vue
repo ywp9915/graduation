@@ -4,9 +4,9 @@
         </Back2>
         <div class="main">
              <router-link to="/userindex" class="user-info" tag="div">
-                 <div class="left-img"><img src="../../assets/user.png" alt=""></div>
+                 <div class="left-img"><img src="../../assets/user/beauty.png" alt=""></div>
                  <div class="right-name">
-                     <div class="nickname">Unicorn</div>
+                     <div class="nickname">一枝独秀</div>
                      <div class="signature">特里布毒性，给你一点点甜点.在屋顶唱着你的歌，和我最爱的人.在屋顶唱着你的歌，和我最爱的人</div>
                  </div>
              </router-link >

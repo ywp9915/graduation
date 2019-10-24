@@ -20,16 +20,23 @@
             <div class="swiper">
                 <mt-swipe :auto="8000">
                     <mt-swipe-item><img src="../../assets/banner/banner1.png" alt=""></mt-swipe-item>
-                    <mt-swipe-item><img src="../../assets/banner/banner2.png" alt=""></mt-swipe-item>        
+                    <mt-swipe-item><img src="../../assets/banner/banner2.png" alt=""></mt-swipe-item>  
+                    <mt-swipe-item><img src="../../assets/banner/banner1.png" alt=""></mt-swipe-item>
+                    <mt-swipe-item><img src="../../assets/banner/banner2.png" alt=""></mt-swipe-item>       
                 </mt-swipe>
             </div>
             
             <div class="nav">
 
+
             </div>
             <div class="book_list">
-                
-
+                <ul  v-for="(item,index) in list" :key="index">
+                    <li>
+                        <img :src="item.img" class="list_img" alt="未显示图片">
+                        <div class="des">{{item.des}}</div>
+                    </li>
+                </ul>
             </div>
         </div>
         <Tabs>
@@ -44,6 +51,15 @@ export default {
     data(){
         return{
             result:[],
+            list:[
+                {img:"../../assets/list/an.jpg",des:"android开发艺术探索"},
+                {img:"../../assets/list/php.jpg",des:"PHP从入门到精通"},
+                {img:"../../assets/list/ps.jpg",des:"Photoshop开发艺术探索"},
+                {img:"../../assets/list/java.jpg",des:"Java从入门到精通"},
+                {img:"../../assets/list/python.jpg",des:"python开发艺术探索"},
+                {img:"../../assets/list/math.jpg",des:"math开发艺术探索"},
+                {img:"../../assets/list/ex.jpg",des:"excel开发艺术探索"}
+            ]
         }
     },
     components:{
@@ -83,6 +99,26 @@ export default {
                         display: inline-block;
                         width:100%;
                         .h(200);
+                    }
+                }
+            }
+        }
+        .book_list{
+            ul{
+                li{
+                    border:1px solid #ccc;
+                    border-bottom:none;
+                    border-radius: 5px;
+                    // .mg(10 10);
+                    img{
+                        display: inline-block;
+                        .w(50);
+                        .h(50);
+                    }
+                    .des{
+                        .fs(14);
+                        color:#777;
+                        overflow:hidden;
                     }
                 }
             }

@@ -6,7 +6,8 @@
                 <li><img src="../../assets/user/beauty.png" alt=""></li>
                 <li class="items"><input class="nickname" type="text" value="一枝独秀"> </li>
                 <li>
-                    <textarea class="signature" name="" id="" cols="35" rows="2" value="给你一点点甜点.在屋顶唱着你的歌，和我最爱的人.在屋顶唱着你的歌，和我最爱的人"></textarea>
+                    <input type="text">
+                    <!-- <textarea class="signature" name="" id="" cols="35" rows="2" value="给你一点点甜点.在屋顶唱着你的歌，和我最爱的人.在屋顶唱着你的歌，和我最爱的人"></textarea> -->
                 </li>
                 <li><input class="btn" type="button" value="修改"></li>
             </ul> 
@@ -53,6 +54,10 @@ export default {
                 }
                 input{
                     text-align:center;
+                }
+                .signature{
+                    color:#555;
+                    .fs(20);
                 }
                 textarea{
                     text-align:center;

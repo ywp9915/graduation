@@ -26,7 +26,7 @@ export default {
     .right(0);
     z-index:997;
     flex-flow:row nowrap;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #ccc;
     justify-content: space-around;
     *{
         display: inline-block;

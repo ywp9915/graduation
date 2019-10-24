@@ -41,8 +41,8 @@ export default {
                 input{
                     outline:none;
                     width:90%;
-                    height:100%;
-                    .pd(20,0,0,10); 
+                    // height:100%;
+                    .pd(15,0,0,10); 
                 }
                 i{
                     position:absolute;

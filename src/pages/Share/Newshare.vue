@@ -4,7 +4,7 @@
         <div class="header">
             <i v-on:click="$router.go(-1)" class="fa fa-times" aria-hidden="true"></i>
             <span class="title"> 分享你的动态</span>
-            <span class="btn">发布</span>
+            <span class="btn" @click="release">发布</span>
         </div>
         <div class="content">
             <textarea @keydown="limit" placeholder="有什么好看的书或者想吐槽的书，欢迎畅所欲言"></textarea>
@@ -26,6 +26,9 @@ export default {
                 alert("输入的字符长度不能超过140个字符");
                 event.returnValue=false
             }
+        },
+        release(){
+            alert("暂不支持发布呢");
         }
     }
 }
@@ -45,6 +48,7 @@ export default {
         background:#fff;
         color:#c20c0c;
         display: flex;
+        border-bottom:1px solid rgb(224, 216, 216);
         .fs(20);
         flex-flow:row nowrap;
         justify-content: space-around;
